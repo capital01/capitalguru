@@ -1,0 +1,34 @@
+Scope : 
+========
+{}===>Scope brances 
+
+==> {
+	Stmts;
+    }
+
+==> if(){
+
+	 // scope of if 
+     }
+
+==> for(){
+
+	// scope of for 
+    }
+
+==> while(){
+	 // scope of while 
+    }
+
+==> class Example {
+	// scope of class 
+
+  }
+
+
+==> void show(){
+	// scope of show method
+
+   } 
+
+
