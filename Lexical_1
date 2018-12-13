@@ -1,0 +1,138 @@
+Lexical : 
+=========
+1. Given statement is broken into small ,small segments ,in such way that no segment can be 
+   re-divided ,such as segment is called lexical
+
+2. Every lexical may or maynot have meaning associated with it.
+
+3. Lexical is also called as character in programming 
+
+ Example :
+  Statement : Hai Ravi
+
+	      H|a|i| | R|a|v|i
+
+	     Lexical : H ,a, i ,R,a,v,i
+
+ Statement  :Integer aval=bval+10;
+
+	     I|n|t|e|g|e|r| |a|v|a|l|=|b|v|a|l|+|1|0|;
+
+	    Lexical : I,n,t,e,g,e,r,a,v,a,l,=,b,v,a,l,+,1,0,;
+	  
+Token : 
+======
+1. Given statement is broken into small segments ,in such way that every segment
+   has meaning associated with it,
+
+2. Every segment is called Token.
+
+3. Tokens are classified into five types :
+
+	 1. Identifiers 
+	 2. Keywords 
+	 3. Constants 
+	 4. Operators 
+	 5. Separators 
+
+Example :
+	Statement : Hai Ravi 
+
+	Tokens	   :Hai| | Ravi|
+
+	Statement :Integer aval=bval+10;
+
+		  : Integer| aval|=|bval|+|10|;
+
+	
+	Token		Type
+	---------------------------
+	Integer 	Keyword
+	
+	aval		Identifier
+	
+	=		Operator
+
+	bval		Identifier
+
+	+		Operator
+
+	10		Constant
+
+	;		separator
+
+
+
+Keywords : 
+===========
+1. These are the reserved words whoes meaning is pre-defined by the compiler .
+
+2. Meaning of these words doesnt change irrespective of where we use.
+
+3. All the keywords are defined as lower case.
+
+	Example : 
+	if ,else,for,class,interface,class,extends,implements, public ,private,global ,protected
+
+
+Separators : 
+=============
+	[] ===> Array braces 
+
+	() ===> Functional braces 
+
+	{} ===> Scope braces
+
+	:  ===> Colon
+
+	;  ===> Semi-colon
+
+	.  ===> Period
+	
+	,  ===> Comma
+
+
+Constants : 
+=============
+1. Elements whose values doesnt change are called constants.
+
+2. Constants are classified into three types 
+
+	a. Numerical Constants 
+	b. String constants
+	c. Boolean constants
+
+3. Numerical constants : 
+     	a. Any value which is formed with digits 0-9 with or without decimal point
+	   and with or with sign is called Numerical constant
+
+	Example : 
+		10000.000
+		+90
+		-12333
+		10000.23344
+		12345.888
+		123ABC123 : //Error ===> String 
+
+
+4. String constant : 
+	a. It is collection of characters surrounded by single quotes .
+	Example : 
+	'Satish Myla'
+	'100-1234'
+	'CaptialInf00001'
+	'ICICI00001'
+	'040-12345'
+	'(040)-12344'
+	'+919000000'	
+	  
+
+5. Boolean constant : 
+	a. It will specify true of false.
+	
+
+
+
+
+
+
