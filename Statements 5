@@ -1,0 +1,103 @@
+1. what is the bookName : Apex Programming
+2. What is the price   : 1000.00
+3. How many books you want : 5 
+4. GST of :18% on Total 
+5. What is the total amount i have to pay ??
+===========================================================
+bookName 	: User   	Apex Programming : String 
+price    	: User		1000.0		 : Decimal
+noBooks  	: user		5		 : Integer 
+total	 	: calculated 	price*noBooks	 : Decimal
+gst	 	: calcualted 	18% of total	 : Decimal
+finalAmount	: calcualted	total+gst	 : Decimal
+
+String bookName;
+Decimal price,total,finalAmount,gst;
+Integer noBooks;
+bookName='Apex Programming';
+price=1000.00;
+noBooks=5;
+total=noBooks*price;
+gst=total*0.18;
+finalAmount=total+gst;
+System.debug(bookName);
+System.debug(price);
+===============================================================
+1.What is the customer Name : ICICI
+2.Which industry :Banking 
+3.What is the leadSouce : Web
+4.What is AnnualRevenue :100000
+5.Processing fee : 5% of AnnualRevenue
+6.Type of Customer : New Customer 
+
+CustomerName   : User 		ICICI		String 
+industry       : User 		Baniking	string
+leadSource     : user		Web		String
+annualRevenue  : user		100000		Decimal
+processingFee  : calculated 	calculated	Decimal
+customerType   : user		New Customer	String
+
+String customerName,industry,leadSource,customerType;
+Decimal annualRevenue,processingFee;
+customerName='ICICI';
+industry='Banking';
+leadSource='Web';
+annualRevenue=100000;
+processingFee=annualRevenue*0.05;
+customerType='New Customer';
+
+-------------------------------------------------------------------
+1. Write a program to calculate interst based on amount,rate,years given 
+
+amount 		: user 		1000.00	
+
+rate		: user 		2.3
+
+years 		: user 		3
+
+intrest		: calculated  	(amount*rate*years)/100
+
+Decimal amouunt,rate,intrest;
+Integer years;
+amount=1000.00;
+rate=2.3;
+years=3;
+intrest=(amount*rate*years)/100;
+=============================================================================
+Create a program to calculate the bill 
+	
+on pens amount 10% discount 	on Books amount :20% discount 
+
+noBooks
+
+noPens
+
+penPrice
+
+bookPrice
+
+pensCost
+
+booksCost
+
+pensDiscount 
+
+
+booksDiscount
+
+total
+
+Integer noBooks,noPens;
+Decimal bookPrice,penPrice,bookCost,penCost,bookDiscount,penDiscount,total
+noBooks=5;
+noPens=10;
+penPrice=1000;
+bookPrice=4000;
+bookCost=bookCost*noBooks;
+penCost=penCost*noPens;
+penDiscount=penCost*0.10;
+bookDiscount=bookCost*0.20;
+total=penCost-penDiscount+bookCost-bookDiscount;
+=
+
+
