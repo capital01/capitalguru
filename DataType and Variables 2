@@ -1,0 +1,196 @@
+Variable :
+-----------
+1. It is a name given to a memory location .
+2. In this location we can store the data  and perform changes based on requirement.
+Example : 
+	empName 
+	salary
+	age 
+	acc
+	accMap
+
+DataType :
+1. This will specify 
+	a. How much memory for given for a variable.
+	b. What type of data is stored in a variable	
+	c. What is the range of the data that is stored in a variable.
+
+2. DataTypes in the salesforce is classified 
+	a. Primitive DataTypes 
+	b. Collection(List/Set/Map)
+	c. Sobject( Generic Object Account,Contact,Customer__c)
+	d. Objects created for Salesforce defined Apex classes
+	e. Objects created for User defined apex classes 
+	f. Enum
+
+3. Primitive DataTypes :
+
+   a. Blob : 
+      1. It is a collection of Binary data under one object.
+      2. It is used to store encryted data or PDF,Documents ,Images.
+      3. Default value is null.
+
+   b. Boolean :
+      1. It will store true of false.
+      2. Default value is null.
+
+   c. Date : 
+      1. This will store the instance of date in the calender 
+      2. Today's date is reffered as System.today()
+      3. If you want to reffer to particular date 
+	  Date.newInstance(YYYY,MM,DD)
+	  Example : Date.newInstance(2018,2,23)
+      4. Default value null
+
+   d. DateTime :
+      1. This will store instance of date along with time 
+      2. Current time is reffered as System.now()
+      3. If you want to reffer to particular instance of date and time 
+	  DateTime.newInstance(YYYY,MM,DD,HRS,MINS,SECS)
+	  Example : DateTime.newInstance(2018,2,23,10,30,0);
+      4. Default value null.
+
+   e. Time : 
+      1. This will store instance of a particualr time .
+      2. Time.newInstance(HRS,MINS,SECS,MSECS)
+      3. Default value null
+   f. Integer :
+      1. It is a 32 bit number.
+      2. It is used to store numerical value ,with out decimal point.
+      3. Maximum value we can store is 2^31-1
+      4. Default value null.
+
+   g. Long : 
+      1. It is a 64 bit number.
+      2. It is used to store the numerical value witout decimal point.
+      3. Maximum value we can store is 2^63-1
+      4. Default value is null.
+
+   h. Decimal :
+      1. It is a 32 bit number 
+      2. It is used to store numerical value with or without decimal point.
+      3. By default currency fields are stored as Decimal
+      4. Default value is null.
+
+   i. Double : 
+      1. It is a 64 bit number .
+      2. It is used to store numerical value with or without decimal point.
+      3. Default value is null.
+
+   j. String : 
+      1. It is a collection of characters surrounded by Single quotes 
+      2. Default value is null.
+
+   k. Id   : 
+      1. It will store any valid 18 character recordId created by salesforce.
+      2. Default value is null.
+
+   l. object: 
+      1. This will store any type of data that is supported by salesforce.
+      2. Default value is null.
+	
+
+Example : 	DataType
+-----------
+10000.00	Decimal
+
+Satish		String 
+
+Hyd		String
+
+ICICI0001	String
+
+040-12344	String
+
+91233		Integer 
+
++9190000	String
+
+90000.123	Decimal
+
+2018-2-23	Date 
+
+==================================================
+Student 	
+==================================================
+info		value		DateType	variableName
+--------------------------------------------------------------
+name		Satish		String		name;
+
+age		33		Integer 	age;
+
+city		Hyd		String 		city;
+
+branch		SRNagar		String		branch;
+
+Phone		040-235678	String 		phone;
+
+email		abc@xyz.com	String		email;
+
+fee		1000.00		Decimal		fee;
+
+exp		3.2		Decimal		exp;
+
+Dob		20-2-2017	Date		dob;
+
+==========================================================
+productInfo
+-------------------------------------------------------------
+Info		value		DataType	variable
+-----------------------------------------------------------
+prodName	Laptop		String 		prodName	
+
+price		30000		Integer		price;
+
+quantity	3		Integer 	quantity;
+
+prodCode	DE001		String 		prodCode;
+
+tax		120.00		Decimal		tax;
+
+gst		12		Decimal		gst;
+
+total		15000.00	Decimal		total;
+
+mfDate		12-Jan-2017	Date		mfDate;
+
+expiryDate	15-Mar-2022	Date		expiryDate
+
+vendorName	Dell		String 		vendorName;
+
+			 
+		
+==> Integer ===> Long===>Decimal===>Double 
+
+
+	Decimal salary=1000; //accepted 
+
+	Integer salary=10000.00; // Not Accepted 
+
+
+variables : 
+
+	DataType variable[=value];
+	
+	Integer age;
+	Decimal salary;
+	String name;
+	String city;
+	String branch='SRNagar';
+	Integer age=40;
+	Decimal total=3400.00;
+
+Non-Primitive : 
+	DateType		variable
+	Account 		acc ;
+	Contact 		con;
+	List<Account> 		accs;
+	List<Integer> 		ages;
+	Set<String> 		places;
+	Map<Integer,String> 	accMap;
+	Example 		emp;
+	Integer[] 		ages;
+
+
+
+
