@@ -1,0 +1,81 @@
+ondition :
+===========
+Relation :  < ,>,<=,>= ,!=
+
+ == : left == right : It will check weather left side value equals to rightside value 
+		    : If both are equal it will return true,
+
+
+1. name equals to wipro 
+
+	name == 'Wipro'
+
+2.  industry equals to Banking 
+	industry =='Banking'
+
+3.  rating equals to hot 
+	rating == 'Hot'
+
+4.  salary equals to 50k
+	salary == 50000
+
+6. salary greater than 50k
+	salary > 50000
+
+7. rating not equals to Warm
+	rating!='Warm'
+
+Logical Operators 
+===================
+&& --->AND 
+
+|| ---> || 
+
+!  ---> Not
+
+1.Industry equals to Banking and rating is hot 
+	
+	industry =='Banking' && rating=='Hot'
+
+2. Name equals to Wipro and annualRevenue lessthan 50K
+	
+	name=='Wipro' && annualRevenye < 50000
+
+3. LeadSource is web or Email 
+	
+	leadSource =='Web' || leadSource=='Email'
+
+
+4.  stagename is not Closed won or Closed Lost 
+
+	stageName !='Closed Won' || stageName!='Closed Lost'
+
+5. Name is not blank or not null
+
+	name!='' || name!=null 
+
+	
+6. closeDate is today and CreatedDate is 10 days before today 
+	closeDate ==System.today() && createdDate == (System.today()-10)
+
+
+7. firstName is Kumar and lastName  is MN
+	firstName =='Kumar' && lastName =='MN'
+
+8. leadSource is Web or Phone
+	leadSource=='Web' || leadSource=='Phone'
+
+9. type is New Customer and amount is more than 50Lacs 
+	type=='New Customer' && amount > 5000000
+
+10. Industry is Banking and ownership is Private
+	industry =='Banking' && ownership=='Private'
+
+11. Rating is warm and type existing customer 
+	rating=='Warm' && type=='Existing Customer'
+
+
+methodName and variable names are in lower camel
+
+
+    
