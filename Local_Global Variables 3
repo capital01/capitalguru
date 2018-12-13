@@ -1,0 +1,66 @@
+Local Variables:
+-----------------
+1. Any variable defined with in the scope are called local variable to that scope.
+
+2. Local variables can be used only within that scope .
+
+3. Local variables cannot be accessed outside the scope.
+
+Global Variables:
+-----------------
+1. Any variable defined outside the scope are called global variables.
+
+2. Global variable can be accessed with in the scope and outside the scope.
+
+
+Example :
+
+	Integer age ;
+	String name;
+	{
+		String branch;
+		String city;
+		age=40;
+		name='Kiran';
+	}
+
+	Local variables : branch,city 
+	Global variables: age ,name
+
+
+Example : 
+	class Example {
+		String name;
+		String phone;
+		String city;
+		void show()
+		{
+			String branch;
+			String industry;
+
+			branch='SRNagar';
+			industry='Banking';
+			name='Wipro';
+			phone='040-1234';
+			city='Hyd';
+		}
+		void callMe()
+		{
+			String rating='Hot';
+			city='Ban';
+		}
+	}
+
+==> Show :  
+	Local : branch,industry
+	global : name,phone,city
+
+
+
+==> CallMe : 
+	Local : rating 
+	global: name,phone,city
+
+
+
+ 
