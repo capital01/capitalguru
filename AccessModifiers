@@ -1,0 +1,58 @@
+<apex:page >
+    Access Modifiers:
+    -----------------
+    Private : 
+    1. If you define method or variable as private then they can be accessed only with in the class 
+       in which they are defined 
+    2. If you dont define any access -modifier by default it is private.
+    
+    3. Only Test classes we define as private.
+    
+    Protected : 
+    1. If you define method or variable as Protected ,they can be accessed only with in the class 
+        and with in child class or inherited class.
+    
+    Public : 
+    1. If you define class, method ,variable as public ,they can be accessed with in the class 
+        or any where in the application.
+    
+    global : 
+    1.If you define class ,method ,variable as global ,they can be accessed with in the class 
+    2.With in the application or outside the application.
+    3.Generally webservice will be defined as global 
+    
+    Syntax : 
+    global /public class ClassName{
+    
+    }
+   	
+    Example : 
+    global class Example {
+    	
+    }
+    
+    public class Demo{
+    
+    }
+
+    variable : global /public /protected/private dataType variableName;
+    	
+    global String name;
+    public Integer age;
+    protected String lastName;
+    private String city;
+    
+    
+    method : global/public/protected/private returnType methodName(parameters)
+    
+    public void callMe(){
+    
+    }
+    private void invoke(){
+    
+    }
+    
+    global void show(){
+    
+    }
+</apex:page>
