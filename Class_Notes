@@ -1,0 +1,188 @@
+<apex:page >
+    Class: 
+    ----------
+    1. It is a collection of datamembers and actions 
+    2. Datamembers are defined as variables 
+    3. Actions are defined as methods.
+    4. syntax : 
+    	class ClassName {
+    		variables ;
+    		methods;
+    	}
+    
+    5. Examples :
+    
+       1.Create a class Student with name ,phone ,age 
+    	  class Student {
+    			string name;
+    			String phone;
+    			Integer age;
+    	   }
+        2. Create a class Employee with lastName,firstName,exp,salary 
+    		 class Employee{
+    				String lastName;
+    				String firstName;
+    				Decimal exp;
+    				Decimal salary;
+    		  }
+    
+    	3. Create a class Employee with lastName,firstName,exp,salary 
+    	   Create a method display which will print the lastName,firstName,exp,salary
+    			class Employee{
+    				String lastName;
+    				String firstName;
+    			    Decimal exp;
+    				Decimal salary;
+    				void display(){
+    					System.debug(lastName);
+    					System.debug(firstName);	
+    					System.debug(exp);
+    					System.debug(salary);
+    				}
+    			}
+    
+    	4. Create a class Employee with lastName,firstName,exp ,salary 
+    	   create a method setData whcih will set the data lastName=Myla frstName as Satisj and exp as 5
+    			class Employee {
+    				String lastName;
+    				String firstName;
+    				Decimal exp;
+    				Decimal salary;
+    				void setData(){
+    					lastName='Myla';
+    					firstName='Satish';
+    					exp=5;
+    				}
+    			}
+    
+    	5. Create a class Employee with lastName,firstName,exp,salary 
+    	   Create a method setData which will set data 
+    						lastName as Myla 
+    						firstName as Satish
+    						exp as 5 
+    						salary : if exp > 5 then salary is 50k else 30k
+    		Create a method display which will print the data 
+      
+    			class Employee {
+    				String lastName;
+    				String firstName;
+    				Decimal exp;
+    				Decimal salary;
+    				void setData(){
+    					lastName='Myla';
+    					firstName='Satish';
+    					exp=5;
+    					if(exp>5){
+    						salary=50000;
+    					}else{
+    						salary=30000;
+    					}
+    				}
+    				void display(){
+    					System.debug(firstName);
+    					System.debug(lastName);
+    					System.debug(salary);
+    					System.debug(exp);
+    				}
+    			}
+    
+    	6. Create a apex class ProductInfo with name ,price,quantity,gst ,total
+    		class ProductInfo{
+    			String name;
+    			Decimal total,gst,total;
+    			Integer quantity;
+    
+    		}
+    	
+    
+    	7. Create a apex class ProductInfo with name ,price,quantity,gst ,total
+    	   Create a method invoke which will set 
+    				name as IPhone
+    				price =50000;
+    				quantity=5
+    				calculate :total =price*quantity
+    				gst : 18% of total
+    			class ProductInfo{
+    				String name;
+    				Decimal price,gst,total;
+    				Integer quantity;
+    				void invoke(){
+    					name='IPhone';
+    					price=50000;
+    					quantity=5;
+    					total=price*quantity;
+    					gst=total*0.18;
+    				}
+    
+    			}
+    
+    	
+    	8.Create a apex class ProductInfo with name ,price,quantity,gst ,total
+    	   Create a method invoke which will set 
+    				name as IPhone
+    				price =50000;
+    				quantity=5
+    				calculate :total =price*quantity
+    				gst : 18% of total
+    
+    	  create a method  callMe which will print name,price,quantity,gst ,total
+    
+    		class ProductInfo{
+    				String name;
+    				Decimal price,gst,total;
+    				Integer quantity;
+    				void invoke(){
+    					name='IPhone';
+    					price=50000;
+    					quantity=5;
+    					total=price*quantity;
+    					gst=total*0.18;
+    				}
+    				void callMe(){
+    					System.debug(name);
+    					System.debug(price);
+    					System.debug(quantity);
+    					System.debug(total);
+    					System.debug(gst);
+    
+    				}
+    
+    			}
+    
+    	9. Create a apex class student with lastName,firstName,phone ,age  as public members 
+    	   Create a method show which will display (public )the data 
+    		public class Student{
+    			public String lastName;
+    			public string firstName;
+    			public String phone;	
+    			public Integer age;
+    			public void show(){
+    				System.debug(lastName);
+    				System.debug(firstName);
+    				System.debug(age);
+    			}
+    		}
+		10. Create a global  class College with following members 
+    			name	: global 
+    			code	: global	
+    			city	: public 
+    			state	: public 
+    			fee		: private 
+    			noStudent:protected 
+    			
+    		create a public method which will display the all the data 
+    		global class College{
+    			global String name;			
+    			global String code;
+    			public String city;
+    			public String state;
+    			private Decimal fee;		
+    			protected Integer noStudent;
+    			public void display(){
+    				System.debug(name);
+    				System.debug(code);
+    				System.debug(fee);
+    			}
+    			
+    		}
+</apex:page>
