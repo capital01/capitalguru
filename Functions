@@ -1,0 +1,156 @@
+ Function :
+    -------------
+    1. It is a group of statements wrapped together to perform particualr task.
+    2. Functions are classified into four types 
+    	a. without returntype and without parameters
+    	b. without returnType and with parameters 
+    	c. With returntype and without parmeters 
+    	d. with returntype and with parameters 
+    3.Without returntype and without parameters 
+    	syntax : 
+    	void functionname(){
+    
+    	}
+    
+    	Example : Create a function show 
+    			 void show(){
+    
+    		    }
+    	Example : Create a method deposit 
+    			void deposit(){
+    
+    			}
+    			Execute :deposit();
+    	Example : Create a method withdraw\
+    			void withdraw(){
+    
+    			}
+    			Execwithdraw();
+    	Example : create a method display
+    			void display(){
+    
+    			}
+    	Example : Create a method create
+    			void create(){
+    
+    			}
+    	Example : Create a method invoke 
+    			void invoke(){
+    
+    			}
+    	Example : Create a method createData
+    			void createData(){
+    
+    			}
+    4. Without returnType and with parametes 
+    	void functionName(parameters){
+    
+    	}
+    	Note : Parameters are nothing but inputs 
+    	Example :1 Create a method show with name and age as parameters 
+    		void show(String name,Integer age){	// inputparameters 
+    
+    	    }
+    	  Execution : show('Satish',33);
+    				: show('Raghu',60);
+    
+    	Example :2 Create a method deposit with amount as parameters 
+    		 void deposit(Decimal amount){
+    
+    		 }
+    		 Execute: deposit(1000);
+    				: deposit(4000);
+    	Example :3 create a method withdraw with amount as parameter
+    		void withdraw(Decimal amount){
+    
+    		}
+    	Example :4 Create a method calculate with amount ,rate ,years as parameters
+    		void calcualte(Decimal amount,Decimal rate, Decimal years){
+    			Decimal intrest =(amount*rate*years)/100;
+    			System.debug(Intrest);
+    		}
+    	  Execute : calculate(10000,2,4);
+    
+    	Example : 5 Create a method setData which will take industry as parameter 
+    				if industy is Banking then set rating as Hot and ownership as public 
+    				else rating is Warm and ownership as Private
+    	
+    			void setData(String industry){
+    				if(industry=='Banking'){
+    					rating='Hot';
+    					ownership='Public';
+    				}else{
+    					rating='Warm';
+    					ownership='Private';
+    				}
+    			}
+    
+    	Example : 6 Create a method calcualte which will take exp and city as Parameters 
+    				if exp is more than 5 years or city is Hyd  then set salary as 50k and bonus as 5k
+    				else salary is 30k and bonus is 3k
+    	
+    			void calculate(Decimal exp ,String city){
+    				if(exp > 5 || city =='Hyd'){
+    					salary=50000;
+    					bonus=5000;
+    				}else{
+    					salary=30000;
+    					bonus=3000;
+    				}
+    			}
+    5. Method with returnType and with no parameters 
+    	ReturnType methodName(){
+    
+    	}
+    
+    Example : Create a method show which will return name;
+    		
+    		String show(){
+    			String lastName='Myla';
+    			String firstName='Satish';
+    			String name=firstName+''+lastName;
+    			System.debug(name);
+    			return name;
+    		}
+    		Execute : 
+    		String  val =show();
+    					 String :Satish Myla 
+    
+    Example : Create a method calculate which will return intrest ;
+    		   Decimal calculate(){
+    				Decimal intrest =(10000*2*4)/100;
+    				return intrest;
+    			}
+    			Decimal val=calculate();// val=800
+    
+    6. Method with parameters and with returnType 
+    	1. Create  method which will take age and exp as parameters 
+    			if age is above 30 or exp is more than 5 years then set salary as 50k and bonus as 5k
+    			else salary as 30k and bonus as 3k 
+    			find the total of salary and bonus and return total
+    
+    		Decimal calculate(Integer age ,Decimal exp){
+    			Decimal total ;
+    			if(age > 30 || exp > 5){
+    				salary=50000;
+    				bonus=5000;
+    			}else{
+    				salary=30000;
+    				bonus=3000;
+    			}
+    			total=salary+bonus;
+    			System.debug(total);
+    			return total;
+    		}
+    
+    Example : void call(String name,String city){
+    
+    			}
+    Execute : call(); //Error 
+    : call('Satish'); // Error 
+    : call('Satish','Hyd');
+    
+    Example : void invoke(String industry, Decimal amount){
+    
+    		  }
+    Execute : invoke('Banking',10000);
